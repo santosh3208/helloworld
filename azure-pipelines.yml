@@ -36,6 +36,13 @@ steps:
       
       docker images
       
+      - task: Docker@2
+        inputs:
+          repository: 'santosh1208/bwceapp:helloworld'
+          command: 'push'
+          tags: 
+          addPipelineData: false
+          addBaseImageData: false
 
 
 
