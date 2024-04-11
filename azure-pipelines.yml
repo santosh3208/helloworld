@@ -36,9 +36,9 @@ steps:
       
       docker images
       
-
 - task: Docker@2
   inputs:
+    containerRegistry: 'Dockerhub'
     command: 'login'
      
     
