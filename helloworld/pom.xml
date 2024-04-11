@@ -36,7 +36,7 @@
           <execution>
             <phase>initialize</phase>
             <goals>
-              <goal>read-project-properties</goal>
+              
             </goals>
           </execution>
         </executions>
