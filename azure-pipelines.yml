@@ -37,7 +37,9 @@ steps:
       docker images
       
 
-
+- task: Docker@2
+  inputs:
+    command: 'login'
      
     
     
