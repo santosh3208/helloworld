@@ -11,7 +11,7 @@
   <artifactId>helloworld</artifactId>
   <packaging>bwear</packaging>
   <properties>
-    
+    <docker.env.property.file>docker-host-env-dev.properties</docker.env.property.file>
     <project.type>Docker</project.type>
     <docker.property.file>docker-dev.properties</docker.property.file>
     <bw.Home>/bwce/2.9</bw.Home>
@@ -36,7 +36,7 @@
           <execution>
             <phase>initialize</phase>
             <goals>
-              
+              <goal>read-project-properties</goal>
             </goals>
           </execution>
         </executions>
