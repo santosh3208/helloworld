@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/helloworld.module/Service Descriptors/helloworld.module.Process-Resource.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1712850485824"
+}]}

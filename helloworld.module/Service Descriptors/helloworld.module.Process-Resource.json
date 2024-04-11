@@ -1,0 +1,48 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "Resource service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/hello/{name}" : {
+      "get" : {
+        "summary" : "getResource",
+        "description" : "getResource",
+        "operationId" : "get-hello",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a msg to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/msg"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "msg" : {
+      "type" : "object",
+      "required" : [ "res" ],
+      "properties" : {
+        "res" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
