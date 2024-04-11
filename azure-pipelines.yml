@@ -19,7 +19,7 @@ steps:
 
 - task: Maven@3
   inputs:
-    mavenPomFile: 'Helloworld.parent/pom.xml'
+    mavenPomFile: 'helloworld.parent/pom.xml'
     goals: 'clean package initialize docker:build'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
